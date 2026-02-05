@@ -11,7 +11,7 @@ export default function Landing() {
           <Link to="/react-router">React Router Blog</Link>
         </li>
         <li>
-          <a href="/tanstack">TanStack Router Blog</a>
+          <Link to="/tanstack">TanStack Router Blog</Link>
         </li>
       </ul>
     </div>

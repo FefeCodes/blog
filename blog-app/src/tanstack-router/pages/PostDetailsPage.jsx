@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "@tanstack/react-router";
 import { posts } from "../../data/posts";
 
 export default function PostDetailsPage() {
-  const { id } = useParams();
+  const { id } = useParams({ from: "/tanstack/post/$id" });
   const navigate = useNavigate();
 
   const post = posts.find((p) => p.id === id);
@@ -10,7 +10,7 @@ export default function PostDetailsPage() {
   if (!post) return <p className="container">Post not found</p>;
 
   return (
-    <div>
+    <div className="container">
       <button onClick={() => navigate({ to: "/tanstack" })}>← Back</button>
 
       <h1>{post.title}</h1>
