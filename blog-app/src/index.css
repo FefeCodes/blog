@@ -1,0 +1,87 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: #2563eb;
+  padding: 8px 16px;
+  border: solid #2563eb 1px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Typography */
+h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+h2,
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 8px;
+}
+
+/* Responsive text */
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+}
